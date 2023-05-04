@@ -1,17 +1,18 @@
 package com.example.mini_p_mok;
 
 public class Client {
-    String firstName, lastName, Age;
+    String username, phone, commande;
 
-    public String getFirstName() {
-        return firstName;
+    public String getUsername() {
+        return username;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getPhone() {
+        return phone;
     }
 
-    public String getAge() {
-        return Age;
+    public String getCommande() {
+        return commande;
     }
+
 }

@@ -20,13 +20,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fisrt Name : "
+                android:text="UserName : "
                 android:layout_marginLeft="8dp"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold"/>
             <TextView
-                android:id="@+id/tvfirstName"
+                android:id="@+id/tvusername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -44,13 +44,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Last Name : "
+                android:text="Phone : "
                 android:layout_marginLeft="8dp"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold"/>
             <TextView
-                android:id="@+id/tvlastName"
+                android:id="@+id/tvphone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -68,13 +68,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Age : "
+                android:text="Command : "
                 android:layout_marginLeft="8dp"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold"/>
             <TextView
-                android:id="@+id/tvage"
+                android:id="@+id/tvcommande"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
