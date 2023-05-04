@@ -41,9 +41,14 @@ public class ListClient extends AppCompatActivity {
             @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                list.clear(); // Vider la liste pour éviter les doublons
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    Client client = dataSnapshot.getValue(Client.class);
-                    list.add(client);
+                    try {
+                        Client client = dataSnapshot.getValue(Client.class);
+                        list.add(client);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
                 myAdapter.notifyDataSetChanged();
             }
