@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mini_p_mok</string>
+    <string name="Command_list">Command List</string>
+    <string name="bienvenue">Bienvenue</string>
 </resources>
