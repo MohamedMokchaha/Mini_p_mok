@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/screen"
+    tools:context=".SecondActivity">
+
+
+    <TextView
+        android:id="@+id/user_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenue" />
+
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        app:srcCompat="@drawable/ic_baseline_logout_24" />
+
+
+    <TextView
+        android:id="@+id/Commande_liste"
+        android:layout_width="344dp"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Ajouter_une_Commande"
+        android:textColor="#331FDB"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+
+    <EditText
+        android:id="@+id/add_Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Produit" />
+    <EditText
+        android:id="@+id/add_Commande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Categorie" />
+
+    <EditText
+        android:id="@+id/add_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prix" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/btn_addClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/AddProd" />
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Command_list"
+        tools:ignore="VisualLintButtonSize" />
+
+
+
+</LinearLayout>

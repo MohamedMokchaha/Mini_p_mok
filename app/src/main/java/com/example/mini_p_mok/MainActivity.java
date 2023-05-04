@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -83,11 +82,19 @@ public class MainActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 progressBar.setVisibility(View.GONE);
                                 if (task.isSuccessful()) {
-                                    // Sign in success, update UI with the signed-in user's information
-                                    Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                                    startActivity(intent);
-                                    finish();
-                                } else {
+                                    if (user.equals("admin@gmail.com")) {
+                                        // Sign in success, update UI with the signed-in user's information
+                                        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                                        startActivity(intent);
+                                        finish();
+                                    } else {
+                                        Intent intent = new Intent(MainActivity.this, ListProd.class);
+                                        startActivity(intent);
+                                        finish();
+                                    }
+
+                                }
+                                else {
                                     // If sign in fails, display a message to the user.
                                     Toast.makeText(MainActivity.this, "Echec de l'authentification, vérifiez vos informations de connexion", Toast.LENGTH_SHORT).show();
                                 }
