@@ -2,4 +2,11 @@
     <string name="app_name">Mini_p_mok</string>
     <string name="Command_list">Command List</string>
     <string name="bienvenue">Bienvenue</string>
+    <string name="Commande_en_attente">Commande en attente</string>
+    <string name="Ajouter_une_Commande">Add Command</string>
+    <string name="AddClient">Add Client</string>
+    <string name="Retour">Retour</string>
+    <string name="Commande__en_attente">"                       Commande en attente"</string>
+    <string name="Commande">Commande</string>
+    <string name="enattente">  En attente</string>
 </resources>

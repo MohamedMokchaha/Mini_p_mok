@@ -3,6 +3,7 @@ package com.example.mini_p_mok;
 public class Client {
     String username, phone, commande;
 
+
     public String getUsername() {
         return username;
     }
@@ -14,5 +15,4 @@ public class Client {
     public String getCommande() {
         return commande;
     }
-
 }
