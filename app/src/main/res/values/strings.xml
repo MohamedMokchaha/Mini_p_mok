@@ -9,4 +9,5 @@
     <string name="Commande__en_attente">"                       Commande en attente"</string>
     <string name="Commande">Commande</string>
     <string name="enattente">  En attente</string>
+    <string name="AddProd">Add Product</string>
 </resources>
