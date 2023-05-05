@@ -50,8 +50,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
             super(itemView);
 
             username = itemView.findViewById(R.id.tvusername);
-            commande = itemView.findViewById(R.id.tvphone);
-            phone = itemView.findViewById(R.id.tvcommande);
+            phone = itemView.findViewById(R.id.tvphone);
+            commande = itemView.findViewById(R.id.tvcommande);
         }
     }
 }
