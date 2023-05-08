@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/screen"
-    tools:context=".SecondActivity">
+    tools:context=".SecondActivityClient">
 
 
     <TextView
@@ -28,7 +28,7 @@
         android:layout_width="344dp"
         android:layout_height="44dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/Ajouterprod"
+        android:text="@string/Ajoutercom"
         android:textColor="#331FDB"
         android:textSize="25dp"
         android:textStyle="bold"
@@ -37,21 +37,21 @@
 
 
     <EditText
-        android:id="@+id/add_Username"
+        android:id="@+id/comm_Username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Produit" />
+        android:hint="Username" />
     <EditText
-        android:id="@+id/add_Commande"
+        android:id="@+id/comm_Commande"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Categorie" />
+        android:hint="Command" />
 
     <EditText
-        android:id="@+id/add_Phone"
+        android:id="@+id/comm_Phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Prix" />
+        android:hint="Phone" />
 
 
     <ProgressBar
@@ -62,18 +62,18 @@
         android:layout_centerHorizontal="true"
         android:visibility="gone" />
     <Button
-        android:id="@+id/btn_addClient"
+        android:id="@+id/btn_addComm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/AddProd" />
+        android:text="@string/Addcomm" />
 
 
     <Button
-        android:id="@+id/add"
+        android:id="@+id/aff_produit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Command_list"
+        android:text="@string/produit_list"
         tools:ignore="VisualLintButtonSize" />
 
 

@@ -8,19 +8,27 @@
     tools:context=".ListProd">
 
 
+    <Button
+        android:id="@+id/retourn2"
+        android:layout_width="111dp"
+        android:layout_height="48dp"
+        android:text="@string/Retour"
+        tools:ignore="VisualLintButtonSize"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="539dp" />
 
     <TextView
         android:id="@+id/attente_liste"
         android:layout_width="344dp"
         android:layout_height="44dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/Liste_produit"
         android:gravity="center"
+        android:text="@string/Liste_produit"
         android:textColor="#331FDB"
         android:textSize="25dp"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="75dp" />
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="74dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/prod_list"
@@ -28,10 +36,10 @@
         android:layout_height="544dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.728" />
+        app:layout_constraintVertical_bias="0.711" />
 
     <ImageButton
         android:id="@+id/logout"

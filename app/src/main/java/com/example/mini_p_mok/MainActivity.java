@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                                         startActivity(intent);
                                         finish();
                                     } else {
-                                        Intent intent = new Intent(MainActivity.this, ListProd.class);
+                                        Intent intent = new Intent(MainActivity.this, SecondActivityClient.class);
                                         startActivity(intent);
                                         finish();
                                     }

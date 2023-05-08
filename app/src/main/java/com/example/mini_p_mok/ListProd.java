@@ -33,7 +33,7 @@ public class ListProd extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_liste_prod);
-        retourn = findViewById(R.id.retourn);
+        retourn = findViewById(R.id.retourn2);
         recyclerView = findViewById(R.id.prod_list);
         database = FirebaseDatabase.getInstance().getReference("Produits");
         recyclerView.setHasFixedSize(true);
@@ -70,6 +70,14 @@ public class ListProd extends AppCompatActivity {
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        retourn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SecondActivityClient.class);
                 startActivity(intent);
                 finish();
             }

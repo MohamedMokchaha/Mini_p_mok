@@ -11,4 +11,8 @@
     <string name="enattente">  En attente</string>
     <string name="AddProd">Add Product</string>
     <string name="Liste_produit">Liste Produit</string>
+    <string name="Ajouterprod">Add product</string>
+    <string name="Ajoutercom">Add Command</string>
+    <string name="Addcomm">Add command</string>
+    <string name="produit_list">Product List</string>
 </resources>
