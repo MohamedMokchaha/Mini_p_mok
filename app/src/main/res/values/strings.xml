@@ -19,4 +19,9 @@
     <string name="TakeyourShop">Take you\'r Shop</string>
     <string name="register">Register</string>
     <string name="sign_in">Sign in</string>
+    <string name="DT">DT</string>
+    <string name="Delete">Delete</string>
+    <string name="Update">Update</string>
+    <string name="Add_Favori">Add Favori</string>
+    <string name="Masquer">Masquer</string>
 </resources>

@@ -8,23 +8,26 @@
     android:layout_margin="16dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="327dp"
+        android:layout_height="match_parent"
         android:layout_marginLeft="16dp"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="UserName : "
                 android:layout_marginLeft="8dp"
+                android:text="UserName : "
                 android:textColor="@color/black"
                 android:textSize="26sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tvusername"
                 android:layout_width="wrap_content"
@@ -32,7 +35,7 @@
                 android:layout_marginLeft="8dp"
                 android:text="Arya"
                 android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -41,14 +44,16 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone : "
                 android:layout_marginLeft="8dp"
+                android:text="Phone : "
                 android:textColor="@color/black"
                 android:textSize="26sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tvphone"
                 android:layout_width="wrap_content"
@@ -56,7 +61,7 @@
                 android:layout_marginLeft="8dp"
                 android:text="Stark"
                 android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -65,14 +70,16 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Command : "
                 android:layout_marginLeft="8dp"
+                android:text="Command : "
                 android:textColor="@color/black"
                 android:textSize="26sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tvcommande"
                 android:layout_width="wrap_content"
@@ -80,7 +87,35 @@
                 android:layout_marginLeft="8dp"
                 android:text="deux"
                 android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Update"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#3DA341"
+                android:padding="8dp"
+                android:layout_marginRight="8dp"/>
+
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Delete"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#F44336"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"/>
 
         </LinearLayout>
 

@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -25,7 +26,7 @@ public class ListProd extends AppCompatActivity {
     RecyclerView recyclerView;
     DatabaseReference database;
     MyAdapterProd myAdapter;
-    Button retourn;
+    Button retourn,add_favori;
     ImageButton button;
     ArrayList<Produit_aff> list;
 
@@ -42,7 +43,7 @@ public class ListProd extends AppCompatActivity {
         list = new ArrayList<>();
         myAdapter = new MyAdapterProd(this,list);
         recyclerView.setAdapter(myAdapter);
-
+        add_favori=findViewById(R.id.add_favori);
         database.addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")
             @Override

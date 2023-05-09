@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,12 +14,11 @@ import java.util.ArrayList;
 
 public class MyAdapterProd extends RecyclerView.Adapter<MyAdapterProd.MyViewHolder> {
     Context context;
-    ArrayList<Produit_aff> list;
+    static ArrayList<Produit_aff> list;
 
     public MyAdapterProd(Context context, ArrayList<Produit_aff> list) {
         this.context = context;
         this.list = list;
-
     }
 
     @NonNull
@@ -38,18 +38,29 @@ public class MyAdapterProd extends RecyclerView.Adapter<MyAdapterProd.MyViewHold
 
     @Override
     public int getItemCount() {
-
         return list.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView nom_pro, categorie_pro, prix_pro;
+        Button delete_btn;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             nom_pro = itemView.findViewById(R.id.tvname_p);
             categorie_pro = itemView.findViewById(R.id.tvcategorie_p);
             prix_pro = itemView.findViewById(R.id.tvprix_p);
+            delete_btn = itemView.findViewById(R.id.btn_delete);
+
+            delete_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+                    list.remove(position);
+                    notifyItemRemoved(position);
+                    notifyItemRangeChanged(position, list.size());
+                }
+            });
         }
     }
 }

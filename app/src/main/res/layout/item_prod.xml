@@ -8,23 +8,26 @@
     android:layout_margin="16dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="363dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Produit : "
                 android:layout_marginLeft="8dp"
+                android:text="Produit : "
                 android:textColor="@color/black"
                 android:textSize="26sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tvname_p"
                 android:layout_width="wrap_content"
@@ -32,7 +35,7 @@
                 android:layout_marginLeft="8dp"
                 android:text="Samsung"
                 android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -41,14 +44,16 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Categorie : "
                 android:layout_marginLeft="8dp"
+                android:text="Categorie : "
                 android:textColor="@color/black"
                 android:textSize="26sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tvcategorie_p"
                 android:layout_width="wrap_content"
@@ -56,7 +61,7 @@
                 android:layout_marginLeft="8dp"
                 android:text="Electronic"
                 android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -65,14 +70,17 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Prix : "
                 android:layout_marginLeft="8dp"
+                android:text="Prix : "
+
                 android:textColor="@color/black"
                 android:textSize="26sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tvprix_p"
                 android:layout_width="wrap_content"
@@ -80,9 +88,46 @@
                 android:layout_marginLeft="8dp"
                 android:text="10"
                 android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Dt"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:text="@string/DT"
+                android:textColor="@color/black" />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/add_favori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Add_Favori"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#3DA341"
+                android:padding="8dp"
+                android:layout_marginRight="8dp"/>
+
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Masquer"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#F44336"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
