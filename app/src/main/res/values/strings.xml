@@ -15,4 +15,8 @@
     <string name="Ajoutercom">Add Command</string>
     <string name="Addcomm">Add command</string>
     <string name="produit_list">Product List</string>
+    <string name="Market_place">Market Place</string>
+    <string name="TakeyourShop">Take you\'r Shop</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign in</string>
 </resources>
